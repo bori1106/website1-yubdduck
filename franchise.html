@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인테리어
+    </title>
+
+    <!-- 폰트어썸 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS소스 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- JS소스 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 제이쿼리 사용을 위한 CDN파일 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="css/franchise.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/down.css">
+    <script defer src="js/index.js"></script>
+    <script defer src="js/top-btn.js"></script>
+    <link rel="shortcut icon" href="images/favicon.png">
+
+
+
+
+</head>
+
+<body>
+
+    <!-- 상단 선 -->
+    <div id="top_line"></div>
+
+    <!-- 로고 및 로그인, 회원가입 -->
+    <header>
+        <!-- 로고: 의미있는 이미지이므로 alt 속성을 추가하고, h1 태그를 사용 -->
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="images/yubdduk_logo.jpg" alt="Yubdduk 로고">
+            </a>
+        </h1>
+
+        <!-- 사용자 메뉴는 리스트 구조로 표현 -->
+        <nav aria-label="사용자 메뉴" class="user-menu">
+            <ul>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="login.html" onclick="alert('로그인이 필요합니다.')">고객의 소리</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- 메뉴nav -->
+    <nav id="wrap-nav" aria-label="주요 메뉴">
+        <div id="nav-container">
+            <ul class="nav-menu">
+                <li>
+                    <a href="hot.html" aria-haspopup="true">핫시즈너</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="hot.html">회사소개</a> </li>
+                        <li><a href="dong.html">동대문엽기떡볶이</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="menu.html" aria-haspopup="true">메뉴안내</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="menu.html">전체메뉴</a></li>
+                        <li><a href="menu_1.html">메인메뉴</a></li>
+                        <li><a href="menu_2.html">닭발메뉴</a></li>
+                        <li><a href="menu_3.html">세트메뉴</a></li>
+                        <li><a href="menu_4.html">사이드/음료</a></li>
+                        <li><a href="menu_5.html">토핑</a></li>
+                        <li><a href="menu_6.html">밀키트</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="event.html" aria-haspopup="true">이벤트&안내</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="event.html">전체 이벤트</a></li>
+                        <li><a href="event_ing.html">진행 중 이벤트</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="store.html">매장찾기</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+                </li>
+
+                <li>
+                    <a href="gift.html">상품권</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+                </li>
+
+                <li>
+                    <a href="notice.html" aria-haspopup="true">고객 안내</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="notice_qna.html">자주하는 질문</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="franchise.html" aria-haspopup="true">가맹문의</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="franchise.html">인테리어</a></li>
+                        <li><a href="franchise1.html#franchise-1-txt">창업절차</a></li>
+                        <li><a href="franchise2.html#franchise-2">개설비용</a></li>
+                        <li><a href="franchise_3.html">창업FAQ</a></li>
+                        <li><a href="franchise_4.html">가맹문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <button type="button" onclick="toggle_btn();" aria-label="네비게이션 토글">
+                &#9776;
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- -------------------------------공통영역 끝------------------------------- -->
+
+
+    <!-- franchise-top 영역 -->
+    <section id="franchise-top">
+        <div class="box">
+            <h2>
+                FRANCHISE
+            </h2>
+        </div>
+    </section>
+
+
+    <!-- 버튼 영역 -->
+    <nav id="franchise-btn">
+
+        <ol>
+            <li>HOME<img src="images/arrow.jpg" aria-hidden="true"></li>
+            <li>가맹문의<img src="images/arrow.jpg" aria-hidden="true"></li>
+            <li>인테리어</li>
+        </ol>
+
+        <ul>
+            <li><a href="franchise.html">인테리어</a></li>
+            <li><a href="franchise1.html#franchise-1-txt">창업절차</a></li>
+            <li><a href="franchise2.html#franchise-2">개설비용</a></li>
+            <li><a href="franchise_3.html">창업FAQ</a></li>
+            <li><a href="franchise_4.html">가맹문의</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- 메인영역 -->
+    <main>
+
+        <!-- ==============인테리어 영역============== -->
+
+        <section id="franchise-in-txt">
+            <p class="box"></p>
+            <h2>인테리어</h2>
+        </section>
+
+        <section id="wrap-franchise-in" data-aos="fade-up" data-aos-duration="1000">
+
+            <div id="franchise-in">
+
+                <p class="img1"><img src="images/franchise_img3.jpg"></p>
+                <p class="img2"><img src="images/franchise_img2.jpg"></p>
+                <p class="img3"><img src="images/franchise_img2_2.jpg"></p>
+
+                <div class="box">
+                    <h2>STORE INTERIOR</h2>
+                    <p class="txt1">동대문엽기떡볶이 내부 인테리어</p>
+                    <p class="txt2">
+                        고급스럽고 깔끔한 다크컬러와 네츄럴톤 우드,<br>
+                        따뜻한 조명을 사용하여 밝고 아늑한 공간에서<br>
+                        매운 요리를 즐길 수 있도록 설계되었습니다.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==============익스테리어 영역============== -->
+        <section id="franchise-ex" data-aos="fade-up" data-aos-duration="1000">
+
+            <h2>STORE EXTERIOR</h2>
+            <p class="txt1">동대문엽기떡볶이 외부 인테리어</p>
+            <p class="txt2">
+                멀리서도 잘 보이는 시그니처 레드 컬러를 사용하였으며,<br>
+                통창 인테리어로 실내를 개방적이고<br>
+                채광이 잘 들어올 수 있도록 설계되었습니다.
+            </p>
+
+            <p class="img1"><img src="images/franchise_logo.jpg"></p>
+            <p class="img2"><img src="images/franchise_img4.jpg"></p>
+            <p class="img3"><img src="images/franchise_img5.jpg"></p>
+            <p class="img4"><img src="images/franchise_img1.jpg"></p>
+
+        </section>
+
+
+        <!-- ==============창업절차 영역============== -->
+
+
+        <section id="franchise-1-txt">
+            <p class="box"></p>
+            <h2>창업절차</h2>
+            <p class="txt">
+                동대문엽기떡볶이 창업 이렇게 준비하시면 됩니다.
+            </p>
+
+        </section>
+
+
+        <section id="wrap-franchise-1" data-aos="fade-up" data-aos-duration="1000">
+            <div id="franchise-1">
+                <p class="icon">
+                    <img src="images/franchise_2_icon.png">
+                </p>
+
+                <ul>
+                    <li>
+                        <h4>Step 01</h4>
+                        <h5>온라인 가맹문의 접수</h5>
+                        <h6>영업일 기준 7일 이내 결과 확인</h6>
+                    </li>
+
+                    <li>
+                        <h4>Step 02</h4>
+                        <h5>가맹 후보자 선정</h5>
+                        <h6>가맹점 운영 계획서 검토<br>
+                            및 후보자 면담</h6>
+                    </li>
+
+
+                    <li>
+                        <h4>Step 03</h4>
+                        <h5>정보공개서 제공<br>
+                            및 가맹계약
+                        </h5>
+                    </li>
+
+                    <li>
+                        <h4>Step 06</h4>
+                        <h5>조리 교육 및 운영교육</h5>
+                        <h6>인테리어 공사 기간 중 교육 진행</h6>
+                    </li>
+
+                    <li>
+                        <h4>Step 05</h4>
+                        <h5>인테리어 시공 및 설비</h5>
+                    </li>
+
+                    <li>
+                        <h4>Step 04</h4>
+                        <h5>인테리어 도면 작성 </h5>
+                    </li>
+
+                    <li>
+                        <h4>Step 07</h4>
+                        <h5>각종 시설 및 집기류 입고</h5>
+                    </li>
+
+                    <li>
+                        <h4>Step 08</h4>
+                        <h5>경영지도 및 관리</h5>
+                        <h6>본사 슈퍼바이저 매출 중대방안 관리</h6>
+                    </li>
+
+                    <li>
+                        <h4>Step 09</h4>
+                        <h5>인테리어 도면 작성 </h5>
+                        <h6>소모품, 비품, 판촉물, 초도물량 입고<br>
+                            오픈 준비 완료
+                        </h6>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============개설비용 영역============== -->
+
+        <section id="franchise-2">
+            <p class="box"></p>
+            <h2>개설비용</h2>
+
+
+            <!-- 18평 -->
+            <h4>18평 기준</h4>
+            <table data-aos="fade-up" data-aos-duration="1000">
+                <tr class="tit">
+                    <td width="145px" height="60px">구분</td>
+                    <td width="440px">내용</td>
+                    <td width="180px">금액</td>
+                    <td width="235px">비고</td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="60px">가맹비</td>
+                    <td class="left">브랜드/메뉴얼 사용, 운영 노하우 전수 </td>
+                    <td>1,000만원</td>
+                    <td>18평 이하도 동일</td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="60px">교육비</td>
+                    <td class="left">레시피 제공, 조리 교육</td>
+                    <td>300만원</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="60px">인테리어</td>
+                    <td class="left">목공(벽, 천장), 전기/조명, 도장, 타일공사, 인조대리석 </td>
+                    <td>3,600만원(200/평)</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="100px">간판</td>
+                    <td class="left">
+                        전면 외부간판, 내부 메뉴판, 내외부 사인<br>
+                        (15평 유리 측면 실사포함)
+                    </td>
+                    <td>400~500만원</td>
+                    <td>돌출간판, 어닝 별도</td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="60px">주방설비</td>
+                    <td class="left">전기온수기(50L), 미장방수, 타일 급배수공사</td>
+                    <td>400만원</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="140px">주방기기 및 집기</td>
+                    <td class="left">
+                        가스렌지(6구), 튀김기, 싱크대, 싱크대선반장, 냉장/냉동고(45BOX),<br>
+                        토핑냉장고, 테이블선반, 전자오븐렌지4대, 컵소독기 등과 조리용품<br>
+                        및 그릇일체
+                    </td>
+                    <td>1,100만원</td>
+                    <td>
+                        매장 평수롸 테이블 개수에 따라<br>
+                        변동 / 식기세척기, 화구분리<br>
+                        (3구, 3구) or 화구분리(4구, 3구)<br>
+                        는 추가사항
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="100px">홀 의자 및 탁자</td>
+                    <td class="left">4인용 8세트 기준(원목의자기준), 붙박이의자</td>
+                    <td>350만원</td>
+                    <td>
+                        매장 평수와 테이블 개수에<br>
+                        따라 변동
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="60px">판촉물 발주</td>
+                    <td class="left">메뉴판, 포스터, 홍보스티커, 배너 등</td>
+                    <td>46만원</td>
+                    <td>평수 무관</td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="140px">외부공사</td>
+                    <td class="left">외부파사드, 외부도장, 외부금속 등</td>
+                    <td>400~700만원</td>
+                    <td>
+                        매장 위치(1F or 2F)에 따라 변동<br>
+                        창호프레임, 강화도어, 자동도어<br>
+                        별도
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="60px">포스시스템</td>
+                    <td class="left">포스단말기, 휴대용 가드단말기, KIOSK 등</td>
+                    <td>280만원</td>
+                    <td>평수 무관</td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="140px">별도공사</td>
+                    <td class="left">철거, 닥트, 분점할 이설 등</td>
+                    <td>500~1,000만원</td>
+                    <td>
+                        퐁딩도어, 화장실, 소방 및<br>
+                        방염공사, 냉난방기, 가스시설,<br>
+                        전기증설 별도
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tit-xt" height="60px">지방경비(별도)</td>
+                    <td class="left">서울 5% / 서울 외 10%</td>
+                    <td>5~10%</td>
+                    <td></td>
+                </tr>
+
+            </table>
+
+            <p class="total" data-aos="fade-up" data-aos-duration="1000">
+                총 8,202~9,102만원<span>(부가가치세 별도, 경비 별도)</span>
+            </p>
+
+            <ul data-aos="fade-up" data-aos-duration="1000">
+                <li>공통사항</li>
+
+                <li>
+                    · 오픈 시 초도물량(식자재 등) 비용은 약 800만원 입니다.<br>
+                    · 시장 환경에 따라, 일부 가격이 변동될 수 있음을 알려드립니다.<br>
+                    · 점주 요펑으로 추가 공사 시, 추가 비용이 청구될 수 있습니다.<br>
+                    · 지방의 경우 추가적인 경비가 발생할 수 있습니다.
+
+                </li>
+            </ul>
+
+
+
+
+
+            <!-- 25평 -->
+            <h4>25평 기준</h4>
+            <table data-aos="fade-up" data-aos-duration="1000">
+                <tr class="tit">
+                    <td width="145px" height="60px">구분</td>
+                    <td width="440px">내용</td>
+                    <td width="180px">금액</td>
+                    <td width="235px">비고</td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="60px">가맹비</td>
+                    <td class="left">브랜드/메뉴얼 사용, 운영 노하우 전수 </td>
+                    <td>1,000만원</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="60px">교육비</td>
+                    <td class="left">레시피 제공, 조리 교육</td>
+                    <td>300만원</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="60px">인테리어</td>
+                    <td class="left">목공(벽, 천장), 전기/조명, 도장, 타일공사, 인조대리석 </td>
+                    <td>5,000만원(200/평)</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="100px">간판</td>
+                    <td class="left">
+                        전면 외부간판, 내부 메뉴판, 내외부 사인<br>
+                        (15평 유리 측면 실사포함)
+                    </td>
+                    <td>500만원</td>
+                    <td>돌출간판, 어닝 별도</td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="60px">주방설비</td>
+                    <td class="left">전기온수기(50L), 미장방수, 타일 급배수공사</td>
+                    <td>480만원</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="140px">주방기기 및 집기</td>
+                    <td class="left">
+                        가스렌지(6구), 튀김기, 싱크대, 싱크대선반장, 냉장/냉동고(45BOX),<br>
+                        토핑냉장고, 테이블선반, 전자오븐렌지4대, 컵소독기 등과 조리용품<br>
+                        및 그릇일체
+                    </td>
+                    <td>1,250만원</td>
+                    <td>
+                        매장 평수롸 테이블 개수에 따라<br>
+                        변동 / 식기세척기, 화구분리<br>
+                        (3구, 3구) or 화구분리(4구, 3구)<br>
+                        는 추가사항
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="100px">홀 의자 및 탁자</td>
+                    <td class="left">4인용 8세트 기준(원목의자기준), 붙박이의자</td>
+                    <td>430만원</td>
+                    <td>
+                        매장 평수와 테이블 개수에<br>
+                        따라 변동
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="60px">판촉물 발주</td>
+                    <td class="left">메뉴판, 포스터, 홍보스티커, 배너 등</td>
+                    <td>46만원</td>
+                    <td>평수 무관</td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="140px">외부공사</td>
+                    <td class="left">외부파사드, 외부도장, 외부금속 등</td>
+                    <td>400~800만원</td>
+                    <td>
+                        매장 위치(1F or 2F)에 따라 변동<br>
+                        창호프레임, 강화도어, 자동도어<br>
+                        별도
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="60px">포스시스템</td>
+                    <td class="left">포스단말기, 휴대용 가드단말기, KIOSK 등</td>
+                    <td>280만원</td>
+                    <td>평수 무관</td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="140px">별도공사</td>
+                    <td class="left">철거, 닥트, 분점할 이설 등</td>
+                    <td>500~1,500만원</td>
+                    <td>
+                        퐁딩도어, 화장실, 소방 및<br>
+                        방염공사, 냉난방기, 가스시설,<br>
+                        전기증설 별도
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tit-txt" height="60px">지방경비(별도)</td>
+                    <td class="left">서울 5% / 서울 외 10%</td>
+                    <td>5~10%</td>
+                    <td></td>
+                </tr>
+
+            </table>
+
+            <p class="total" data-aos="fade-up" data-aos-duration="1000">
+                총 10,012~11,412만원<span>(부가가치세 별도, 경비 별도)</span>
+            </p>
+
+            <ul data-aos="fade-up" data-aos-duration="1000">
+                <li>공통사항</li>
+
+                <li>
+                    · 오픈 시 초도물량(식자재 등) 비용은 약 800만원 입니다.<br>
+                    · 시장 환경에 따라, 일부 가격이 변동될 수 있음을 알려드립니다.<br>
+                    · 점주 요펑으로 추가 공사 시, 추가 비용이 청구될 수 있습니다.<br>
+                    · 지방의 경우 추가적인 경비가 발생할 수 있습니다.
+
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!-- -------------------------------공통영역 시작------------------------------- -->
+
+    <!-- 카피라이트 -->
+
+    <footer>
+        <div id="wrap-copy">
+            <ul>
+                <!-- 로고 -->
+                <li><a href="#"><img src="images/copy_logo.jpg" alt="HOT SEASONER 로고"></a></li>
+
+                <!-- 이용약관 및 회사 정보 -->
+                <li>
+                    <p class="txt1">
+                        <a href="#a">이용약관</a>
+                        <b></b>
+                        <span><a href="#a">개인정보처리방침</a></span>
+                        <b></b>
+                        <a href="#a">법적고지</a>
+                        <b></b>
+                        <a href="#a">영상정보처리기기운영/관리</a>
+                    </p>
+
+                    <p class="txt2">
+                        <span>(주)핫시즈너</span><b></b>사업자등록번호 : 201-86-13311<b></b>대표번호 :
+                        070-7710-8592<b></b><span>고객센터
+                            1661-8514</span><br>
+                        본사 : 서울특별시 성동구 성수이로 18길 7 HS빌딩 7층
+                    </p>
+
+                    <p class="txt3">COPYRIGHT ⓒ BY HOTSEASONER HOT FOOD ALL RIGHTS RESERVED</p>
+                </li>
+
+                <!-- 수상 내역 -->
+                <li>
+                    <ol>
+                        <img src="images/copy_img1_2021.jpg" alt="2023 소비자포럼 - 올해의 브랜드 대상 떡볶이 부문 7년 수상">
+                        <p class="txt">
+                            <span>2023 소비자포럼</span><br>
+                            올해의 브랜드 대상 떡볶이<br>
+                            부문 7년 수상
+                        </p>
+                    </ol>
+
+                    <ol>
+                        <img src="images/copy_img1_2022.jpg" alt="2022 소비자포럼 - 올해의 브랜드 대상 떡볶이 부문 6년 수상">
+                        <p class="txt">
+                            <span>2022 소비자포럼</span><br>
+                            올해의 브랜드 대상 떡볶이<br>
+                            부문 6년 수상
+                        </p>
+                    </ol>
+
+                    <ol>
+                        <img src="images/copy_img1_2023.jpg" alt="2021 소비자포럼 - 올해의 브랜드 대상 떡볶이 부문 5년 수상">
+                        <p class="txt">
+                            <span>2021 소비자포럼</span><br>
+                            올해의 브랜드 대상 떡볶이<br>
+                            부문 5년 수상
+                        </p>
+                    </ol>
+
+                    <ol>
+                        <img src="images/copy_img2.jpg" alt="2018 해럴드 경제 - 고객감동국가경쟁력 우수 프랜차이즈 부문 대상 수상">
+                        <p class="txt">
+                            <span>2018 해럴드 경제</span><br>
+                            고객감동국가경쟁력 우수<br>
+                            프랜차이즈 부문 대상 수상
+                        </p>
+                    </ol>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+
+    <!-- top버튼 -->
+    <p class="arrow"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></p>
+
+
+
+</body>
+
+<!--AOS실행을 위한 코드-->
+<script>
+    AOS.init();
+</script>
+
+</html>
+
+</html>

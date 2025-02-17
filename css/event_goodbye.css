@@ -1,0 +1,149 @@
+#event_top {
+  width: 100%;
+  height: 528px;
+ 
+  margin: 0 auto;
+  background: url(../images/event_top_bg.jpg) no-repeat center;
+  background-size: cover;
+
+}
+
+#event_top div.box {
+  width: 100%;
+  height: 528px;
+  /* background: rgba(0, 0, 0, 0.6); */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#event_top div.box h2 {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+
+  animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+#event_top div.box h2 span {
+  font-family: 'Palatino Linotype';
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* 3000원 할인 이벤트 영역 */
+
+#title {
+  width: 1100px;
+  height: 240px;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+  margin-bottom: 105px;
+  text-align: center;
+}
+
+#title h6 {
+  font-size: 20px;
+  color: #222;
+  letter-spacing: -1px;
+  padding: 76px 0 15px 0;
+}
+
+#title h2 {
+  font-size: 40px;
+  color: #222;
+  letter-spacing: -2px;
+}
+
+
+#title h5 {
+  font-size: 18px;
+  color: #de1d24;
+  letter-spacing: -1px;
+  padding-top: 15px;
+}
+
+
+#main {
+  width: 1100px;
+  height: auto;
+  /* background: palegoldenrod; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#main p.btn2 {
+  width: 470px;
+  height: 80px;
+  background: #de1d24;
+  border-radius: 30px;
+
+  margin: 0 auto;
+  margin-top: 65px;
+  margin-bottom: 100px;
+}
+
+#main p.btn2 {
+  background: #232323;
+}
+
+#main p.btn2 a {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: #fff;
+  line-height: 80px;
+  display: block;
+}
+
+
+#main p.txt {
+  text-align: left;
+
+  padding-left: 150px;
+  padding-top: 60px;
+
+  font-size: 20px;
+  letter-spacing: -1px;
+  color: #222;
+  line-height: 2;
+}
+
+#main p.txt b {
+  font-size: 28px;
+}
+
+#main p.txt span.a {
+  font-weight: bold;
+}
+
+#main p.txt span.b {
+  font-weight: bold;
+  color: #de1d24;
+  font-size: 18px;
+}

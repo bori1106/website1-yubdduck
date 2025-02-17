@@ -1,0 +1,307 @@
+#gift-top {
+    width: 100%;
+    height: 528px;
+    margin: 0 auto;
+    background: url(../images/gift_top_bg.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+#gift-top div.box {
+    width: 100%;
+    height: 528px;
+    /* background: rgba(0, 0, 0, 0.6); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gift-top div.box h2 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+#gift-top div.box h2 span {
+    font-family: 'Palatino Linotype';
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 버튼 영역  */
+#gift-btn {
+    width: 1100px;
+    height: 176px;
+    /* background: palegoldenrod; */
+    margin: 0 auto;
+}
+
+#gift-btn ol {
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #999;
+    padding: 40px 0;
+    display: flex;
+}
+
+#gift-btn ol li {
+    font-weight: bold;
+}
+
+#gift-btn ol li:nth-child(3) {
+    color: #222;
+}
+
+#gift-btn ol img {
+    width: 13px;
+    margin-bottom: 4px;
+}
+
+
+/* 버튼 */
+#gift-btn ul {
+    display: flex;
+}
+
+#gift-btn ul li a {
+    display: block;
+
+    width: 550px;
+    height: 75px;
+    background: #fff;
+    /* border: 1px solid #e2e2e2; */
+    border-bottom: 3px solid #e5e5e5;
+    box-sizing: border-box;
+
+    font-size: 22px;
+    font-weight: bold;
+    color: #888;
+    letter-spacing: -2px;
+
+    text-align: center;
+    line-height: 75px;
+
+}
+
+#gift-btn ul li:first-child a {
+    /* background: #de1d24; */
+    border-bottom: 3px solid #de1d24;
+}
+
+#gift-btn ul li:first-child a {
+    color: #222;
+}
+
+/* #hot_btn ul li:first-child a {
+    border-right: 0;
+} */
+
+#gift-btn ul li:hover a {
+    /* background: #de1d24; */
+    border-bottom: 3px solid #de1d24;
+}
+
+#gift-btn ul li:hover a {
+    color: #222;
+}
+
+
+/* 메인 영역  */
+#wrap-gift-main {
+    width: 100%;
+    height: 1130px;
+    background: #f6f6f6;
+
+    text-align: center;
+}
+
+#gift-main {
+    width: 1100px;
+    height: 1130px;
+    background: #f6f6f6;
+    margin: 0 auto;
+}
+
+#gift-main h2 {
+    font-size: 25px;
+    letter-spacing: -2px;
+    line-height: 1.5;
+    color: #222;
+    margin: 0 auto;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+#gift-main ul.top {
+    width: 1050px;
+    height: 550px;
+    /* background: #000; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+#gift-main ul.top li img {
+    width: 505px;
+}
+
+
+#gift-main p.notice {
+    /* width: auto;
+    height: 20px;
+    background: #000; */
+    font-size: 14px;
+    color: #888;
+    font-weight: bold;
+
+    text-align: right;
+    padding-right: 40px;
+    padding-top: 10px;
+
+    cursor: pointer;
+}
+
+#gift-main p.notice img {
+    width: 17px;
+    padding-bottom: 2px;
+}
+
+
+#gift-main h6 {
+    font-size: 20px;
+    color: #333;
+    letter-spacing: -1px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+#gift-main h6 span {
+    color: #de1d24;
+}
+
+#gift-main p.btn {
+    width: 285px;
+    height: 55px;
+    background: #de1d24;
+    border-radius: 30px;
+
+    margin: 0 auto;
+}
+
+
+#gift-main p.btn a {
+
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: -1px;
+    font-weight: bold;
+    line-height: 55px;
+}
+
+/* 유의사항 */
+#popup {
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+}
+
+#popup div.pop {
+    width: 1050px;
+    height: 600px;
+    background: #fff;
+    border-radius: 50px;
+
+    padding: 80px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    animation-name: show;
+    animation-duration: 1.5s;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+#popup div.pop p.btn i {
+    color: #000;
+    font-size: 30px;
+
+    position: absolute;
+    top: 80px;
+    right: 80px;
+
+    cursor: pointer;
+}
+
+#popup div.pop h2 {
+    font-size: 30px;
+    letter-spacing: -2px;
+}
+
+#popup div.pop p.line {
+    width: 890px;
+    height: 1px;
+    background: #000;
+
+    margin: 30px 0;
+}
+
+#popup div.pop pre {
+    font-family: '나눔바른고딕';
+
+    font-size: 15px;
+    line-height: 2.1;
+    font-weight: bold;
+    color: #555;
+}

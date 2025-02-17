@@ -1,0 +1,220 @@
+#menu-top {
+    width: 100%;
+    height: 528px;
+    margin: 0 auto;
+    background: url(../images/menu_top_bg2.jpg) no-repeat center;
+
+    background-size: cover;
+
+}
+
+#menu-top h2 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+    padding-top: 239px;
+
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 버튼 영역  */
+#menu-btn {
+    width: 1100px;
+    height: 160px;
+    /* background: palegoldenrod; */
+    margin: 0 auto;
+}
+
+#menu-btn ol {
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #999;
+    padding: 40px 0;
+    display: flex;
+}
+
+#menu-btn ol li {
+    font-weight: bold;
+}
+
+#menu-btn ol li:nth-child(3) {
+    color: #222;
+}
+
+#menu-btn ol img {
+    width: 13px;
+    margin-bottom: 4px;
+    margin: 0 5px 4px 5px;
+}
+
+
+/* 버튼 */
+#menu-btn ul {
+    display: flex;
+}
+
+#menu-btn ul li a {
+    display: block;
+
+    width: calc(1100px/7);
+    height: 75px;
+    background: #fff;
+    /* border-top: 1px solid #e2e2e2; */
+    border-bottom: 3px solid #e2e2e2;
+    /* border-left: 1px solid #e2e2e2; */
+    box-sizing: border-box;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #888;
+    letter-spacing: -2px;
+
+    text-align: center;
+    line-height: 75px;
+
+}
+
+#menu-btn ul li:nth-child(5) a {
+    border-bottom: 3px solid #de1d24;
+    /* background: #de1d24; */
+}
+
+#menu-btn ul li:nth-child(5) a {
+    color: #222;
+}
+
+#menu-btn ul li:hover a {
+    border-bottom: 3px solid #de1d24;
+    /* background: #de1d24; */
+}
+
+#menu-btn ul li:hover a {
+    color: #222;
+}
+
+/* 메인 영역  */
+#menu-main {
+    width: 1100px;
+    height: auto;
+    /* background: paleturquoise; */
+    margin: 0 auto;
+    margin-top: 90px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#menu-main ul {
+    /* margin-top: 20px; */
+
+    width: 1100px;
+    height: auto;
+}
+
+#menu-main ul h1 {
+    font-size: 22px;
+    letter-spacing: -1px;
+    color: #222;
+    background: #f2f2f2;
+    padding: 12px 0 12px 20px;
+    margin-bottom: 35px;
+
+}
+
+#menu-main ul li {
+    width: 240px;
+    height: 260px;
+    /* background: papayawhip; */
+    float: left;
+    margin: 20px 15px 80px 15px;
+
+    cursor: pointer;
+    position: relative;
+}
+
+#menu-main ul li div.box {
+    width: 240px;
+    height: 225px;
+    border: 1px solid #fdefd4;
+    border-radius: 40px;
+    background: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+#menu-main ul li div.box h2,
+#menu-main ul li div.box img {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1.2s;
+}
+
+#menu-main ul li div.box h2 {
+    opacity: 0;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: -1px;
+    color: #222;
+    text-align: center;
+}
+
+#menu-main ul li div.box h2 span {
+    color: #de1d24;
+    font-size: 16px;
+}
+
+#menu-main ul li:hover div.box h2 {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+#menu-main ul li:hover div.box img {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+#menu-main ul li p.name {
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #222;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+/* hot, new 아이콘 */
+#menu-main ul li p.hot,
+#menu-main ul li p.new {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}

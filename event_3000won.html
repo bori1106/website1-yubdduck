@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3000원 할인 이벤트</title>
+
+    <!-- 폰트어썸 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 제이쿼리 사용을 위한 CDN파일 -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- CSS소스 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- JS소스 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="css/event_3000won.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/down.css">
+    <script defer src="js/index.js"></script>
+    <script defer src="js/top-btn.js"></script>
+    <link rel="shortcut icon" href="images/favicon.png">
+
+
+
+</head>
+
+
+<body>
+
+    <!-- 상단 선 -->
+    <div id="top_line"></div>
+
+    <!-- 로고 및 로그인, 회원가입 -->
+    <header>
+        <!-- 로고: 의미있는 이미지이므로 alt 속성을 추가하고, h1 태그를 사용 -->
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="images/yubdduk_logo.jpg" alt="Yubdduk 로고">
+            </a>
+        </h1>
+
+        <!-- 사용자 메뉴는 리스트 구조로 표현 -->
+        <nav aria-label="사용자 메뉴" class="user-menu">
+            <ul>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="login.html" onclick="alert('로그인이 필요합니다.')">고객의 소리</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- 메뉴nav -->
+    <nav id="wrap-nav" aria-label="주요 메뉴">
+        <div id="nav-container">
+            <ul class="nav-menu">
+                <li>
+                    <a href="hot.html" aria-haspopup="true">핫시즈너</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="hot.html">회사소개</a> </li>
+                        <li><a href="dong.html">동대문엽기떡볶이</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="menu.html" aria-haspopup="true">메뉴안내</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="menu.html">전체메뉴</a></li>
+                        <li><a href="menu_1.html">메인메뉴</a></li>
+                        <li><a href="menu_2.html">닭발메뉴</a></li>
+                        <li><a href="menu_3.html">세트메뉴</a></li>
+                        <li><a href="menu_4.html">사이드/음료</a></li>
+                        <li><a href="menu_5.html">토핑</a></li>
+                        <li><a href="menu_6.html">밀키트</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="event.html" aria-haspopup="true">이벤트&안내</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="event.html">전체 이벤트</a></li>
+                        <li><a href="event_ing.html">진행 중 이벤트</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="store.html">매장찾기</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+                </li>
+
+                <li>
+                    <a href="gift.html">상품권</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+                </li>
+
+                <li>
+                    <a href="notice.html" aria-haspopup="true">고객 안내</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="notice_qna.html">자주하는 질문</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="franchise.html" aria-haspopup="true">가맹문의</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="franchise.html">인테리어</a></li>
+                        <li><a href="franchise1.html#franchise_1_txt">창업절차</a></li>
+                        <li><a href="franchise2.html#franchise_2">개설비용</a></li>
+                        <li><a href="franchise_3.html">창업FAQ</a></li>
+                        <li><a href="franchise_4.html">가맹문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <button type="button" onclick="toggle_btn();" aria-label="네비게이션 토글">
+                &#9776;
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- -------------------------------공통영역 끝------------------------------- -->
+
+
+    <!-- event_top영역 -->
+    <div id="event_top">
+        <div class="box">
+            <h2>
+                EVENT
+            </h2>
+        </div>
+    </div>
+
+
+    <!-- 3000원 할인 이벤트 영역 -->
+
+    <div id="title">
+
+        <h6>이벤트 & 안내</h6>
+        <h2>[이벤트] 엽떡앱에서 방문 포장시 3,000원 할인</h2>
+        <h5>2024.04.01~2024.12.31</h5>
+
+    </div>
+
+    <!-- 메인영역 -->
+
+    <div id="main" data-aos="fade-up" data-aos-duration="1500">
+
+        <p class="poster"><img src="images/event_3000won.jpg"></p>
+
+        <p class="btn1"><a href="#a" onclick="document.getElementById('app_popup').style.display='block'">엽떡앱 다운로드</a>
+        </p>
+
+        <p class="line"></p>
+
+        <p class="txt">
+            <b>[유의사항]</b><br><br>
+            1. 엽떡앱 방문포장 주문에 한하여 할인 적용<br>
+            2. 엽떡앱 회원 한정 할인 적용, 비회원 적용 불가<br>
+            3. 14,000원 이상 메인메뉴 주문 시, 할인 적용<br>
+            <span>( * 단, 2인 엽기떡볶이는 할인대상에서 제외 )</span><br>
+            4. ID당 1일 1회, 할인 혜택 적용 가능<br>
+            5. 타 할인쿠폰 중복적용 불가<br>
+            6. 상품권 중복적용 가능
+        </p>
+
+
+        <p class="btn2"><a href="event.html">목록</a>
+        </p>
+    </div>
+
+    <!-- ======== app 다운받기 팝업 ======= -->
+
+    <div id="app_popup">
+
+        <div class="pop">
+            <p class="btn" onclick="document.getElementById('app_popup').style.display='none'"><i
+                    class="fa-solid fa-x"></i>
+            </p>
+
+            <p class="logo"><img src="images/yubdduk_logo.jpg"></p>
+
+            <h2>동대문엽기떡볶이</h2>
+
+            <p class="txt">
+                지금 엽기떡볶이 멤버십 앱을 다운로드 하시고,<br>
+                다양한 멤버십 혜택의 기회를 잡으세요!
+            </p>
+
+            <p class="btn1"><a href="https://play.google.com/store/apps/details?id=com.yupdduk.morder"
+                    target="_blank"><img src="images/main_app_popup_logo1.jpg" alt=""></a></p>
+
+            <p class="btn2"><a
+                    href="https://apps.apple.com/kr/app/%EC%97%BD%EA%B8%B0%EB%96%A1%EB%B3%B6%EC%9D%B4/id1190023113"
+                    target="_blank"><img src="images/main_app_popup_logo2.jpg" alt=""></a></p>
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- -------------------------------공통영역 시작------------------------------- -->
+
+    <!-- 카피라이트 -->
+
+    <footer>
+        <div id="wrap-copy">
+            <ul>
+                <!-- 로고 -->
+                <li><a href="#"><img src="images/copy_logo.jpg" alt="HOT SEASONER 로고"></a></li>
+
+                <!-- 이용약관 및 회사 정보 -->
+                <li>
+                    <p class="txt1">
+                        <a href="#a">이용약관</a>
+                        <b></b>
+                        <span><a href="#a">개인정보처리방침</a></span>
+                        <b></b>
+                        <a href="#a">법적고지</a>
+                        <b></b>
+                        <a href="#a">영상정보처리기기운영/관리</a>
+                    </p>
+
+                    <p class="txt2">
+                        <span>(주)핫시즈너</span><b></b>사업자등록번호 : 201-86-13311<b></b>대표번호 : 070-7710-8592<b></b><span>고객센터
+                            1661-8514</span><br>
+                        본사 : 서울특별시 성동구 성수이로 18길 7 HS빌딩 7층
+                    </p>
+
+                    <p class="txt3">COPYRIGHT ⓒ BY HOTSEASONER HOT FOOD ALL RIGHTS RESERVED</p>
+                </li>
+
+                <!-- 수상 내역 -->
+                <li>
+                    <ol>
+                        <img src="images/copy_img1_2021.jpg" alt="2023 소비자포럼 - 올해의 브랜드 대상 떡볶이 부문 7년 수상">
+                        <p class="txt">
+                            <span>2023 소비자포럼</span><br>
+                            올해의 브랜드 대상 떡볶이<br>
+                            부문 7년 수상
+                        </p>
+                    </ol>
+
+                    <ol>
+                        <img src="images/copy_img1_2022.jpg" alt="2022 소비자포럼 - 올해의 브랜드 대상 떡볶이 부문 6년 수상">
+                        <p class="txt">
+                            <span>2022 소비자포럼</span><br>
+                            올해의 브랜드 대상 떡볶이<br>
+                            부문 6년 수상
+                        </p>
+                    </ol>
+
+                    <ol>
+                        <img src="images/copy_img1_2023.jpg" alt="2021 소비자포럼 - 올해의 브랜드 대상 떡볶이 부문 5년 수상">
+                        <p class="txt">
+                            <span>2021 소비자포럼</span><br>
+                            올해의 브랜드 대상 떡볶이<br>
+                            부문 5년 수상
+                        </p>
+                    </ol>
+
+                    <ol>
+                        <img src="images/copy_img2.jpg" alt="2018 해럴드 경제 - 고객감동국가경쟁력 우수 프랜차이즈 부문 대상 수상">
+                        <p class="txt">
+                            <span>2018 해럴드 경제</span><br>
+                            고객감동국가경쟁력 우수<br>
+                            프랜차이즈 부문 대상 수상
+                        </p>
+                    </ol>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+
+    <!-- top버튼 -->
+    <p class="arrow"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></p>
+
+
+</body>
+
+<!--AOS실행을 위한 코드-->
+<script>
+    AOS.init();
+</script>
+
+</html>

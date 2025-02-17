@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맛있게 맵다! 동대문엽기떡볶이</title>
+
+    
+    <!-- 폰트어썸 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- 제이쿼리 사용을 위한 CDN파일 -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <!-- 제이쿼리 실행을 위한 파일 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- bx슬라이더 관련 css -->
+    <link rel="stylesheet" href="bxsilder/dist/jquery.bxslider.min.css">
+    <!-- bx슬라이더 관련 JS파일 -->
+    <script src="bxsilder/dist/jquery.bxslider.min.js"></script>
+
+    
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/down.css">
+    <script defer src="js/index.js"></script>
+    <script defer src="js/top-btn.js"></script>
+    <link rel="shortcut icon" href="images/favicon.png">
+
+
+
+</head>
+
+<body>
+
+    <!-- 상단 선 -->
+    <div id="top_line"></div>
+
+    <!-- 로고 및 로그인, 회원가입 -->
+    <header>
+        <!-- 로고: 의미있는 이미지이므로 alt 속성을 추가하고, h1 태그를 사용 -->
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="images/yubdduk_logo.jpg" alt="Yubdduk 로고">
+            </a>
+        </h1>
+
+        <!-- 사용자 메뉴는 리스트 구조로 표현 -->
+        <nav aria-label="사용자 메뉴" class="user-menu">
+            <ul>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="login.html" onclick="alert('로그인이 필요합니다.')">고객의 소리</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- 메뉴nav -->
+    <nav id="wrap-nav" aria-label="주요 메뉴">
+        <div id="nav-container">
+            <ul class="nav-menu">
+                <li>
+                    <a href="hot.html" aria-haspopup="true">핫시즈너</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="hot.html">회사소개</a> </li>
+                        <li><a href="dong.html">동대문엽기떡볶이</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="menu.html" aria-haspopup="true">메뉴안내</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="menu.html">전체메뉴</a></li>
+                        <li><a href="menu_1.html">메인메뉴</a></li>
+                        <li><a href="menu_2.html">닭발메뉴</a></li>
+                        <li><a href="menu_3.html">세트메뉴</a></li>
+                        <li><a href="menu_4.html">사이드/음료</a></li>
+                        <li><a href="menu_5.html">토핑</a></li>
+                        <li><a href="menu_6.html">밀키트</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="event.html" aria-haspopup="true">이벤트&안내</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="event.html">전체 이벤트</a></li>
+                        <li><a href="event_ing.html">진행 중 이벤트</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="store.html">매장찾기</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+                </li>
+
+                <li>
+                    <a href="gift.html">상품권</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+                </li>
+
+                <li>
+                    <a href="notice.html" aria-haspopup="true">고객 안내</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="notice_qna.html">자주하는 질문</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="franchise.html" aria-haspopup="true">가맹문의</a>
+                    <p class="icon"><img src="images/nav_icon.png" alt="주요매뉴 아이콘"></p>
+
+                    <ul class="sub">
+                        <li><a href="franchise.html">인테리어</a></li>
+                        <li><a href="franchise1.html#franchise_1_txt">창업절차</a></li>
+                        <li><a href="franchise2.html#franchise_2">개설비용</a></li>
+                        <li><a href="franchise_3.html">창업FAQ</a></li>
+                        <li><a href="franchise_4.html">가맹문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <button type="button" onclick="toggle_btn();" aria-label="네비게이션 토글">
+                &#9776;
+            </button>
+
+        </div>
+    </nav>
+
+
+    <!-- -------------------------------공통영역 끝------------------------------- -->
+
+    <main>
+
+        <!-- 메인배너 3종 -->
+        <section id="main-banner" arial-label="메인 배너">
+            <ul class="mainslide">
+                <li><a href="dong.html"><img src="images/main_banner1.jpg" alt="엽기떡볶이 소개 배너"></a></li>
+                <li><a href="event_ing.html"><img src="images/main_banner2.jpg" alt="엽기떡볶이 배경화면 이벤트 배너"></a></li>
+                <li><a href="event_ing.html"><img src="images/main_banner3.jpg" alt="엽포터즈 배너"></a></li>
+            </ul>
+
+            <!-- 매장찾기, 가맹문의 버튼 -->
+            <ul class="btn">
+                <li>
+                    <a href="store.html"><img src="images/main_top_btn_icon1.jpg" alt="매장찾기 아이콘">
+                        매장찾기</a>
+                </li>
+
+                <li>
+                    <a href="franchise_4.html"><img src="images/main_top_btn_icon2.jpg" alt="가맹신청·문의 아이콘">
+                        가맹신청·문의</a>
+                </li>
+            </ul>
+
+        </section>
+
+
+
+        <!-- 메인메뉴 -->
+        <section id="main-menu" aria-labelledby="mainmenuHeading">
+            <h1 id="mainmenuHeading">MAIN MENU</h1>
+            <p class="more"><a href="menu.html">+ VIEW MORE</a></p>
+
+            <ul>
+                <li>
+                    <p class="img"><img src="images/mainmenu_img1.jpg" alt="엽기메뉴 이미지">
+                    </p>
+                    <p class="txt">엽기메뉴</p>
+                </li>
+
+                <li>
+                    <p class="img"><img src="images/mainmenu_img2.jpg" alt="로제메뉴 이미지">
+                    </p>
+                    <p class="txt">로제메뉴</p>
+                </li>
+
+                <li>
+                    <p class="img"><img src="images/mainmenu_img3.jpg" alt="마라떡볶이 이미지">
+                    </p>
+                    <p class="txt">마라떡볶이</p>
+                </li>
+
+                <li>
+                    <p class="img"><img src="images/mainmenu_img4.jpg" alt="마라로제떡볶이 이미지">
+                    </p>
+                    <p class="txt">마라로제떡복이</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 세일배너 -->
+        <section id="sale-banner" aria-label="세일 배너">
+            <p class="bg"><a href="event_3000won.html"><img src="images/main_salebanner.jpg" alt="세일 배너 이미지"></a></p>
+
+            <p class="btn">
+                <button type="button" onclick="document.getElementById('app-popup').style.display='block'"
+                    aria-haspopup="dialog">
+                    APP 다운받기
+                </button>
+            </p>
+        </section>
+
+
+        <!--모바일ver 세일배너 -->
+        <section id="sale-banner-m">
+            <p class="bg"><a href="event_3000won.html"><img src="images/main_salebanner_mobile.jpg"></a></p>
+        </section>
+
+
+        <!-- ======== app 다운받기 팝업 ======= -->
+
+        <section id="app-popup" role="dialog" aria-modal="true" aria-labelledby="appPopupTitle" style="display: none;">
+
+            <div class="pop">
+                <button type="button" class="btn-close"
+                    onclick="document.getElementById('app-popup').style.display='none'" aria-label="팝업 닫기">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+
+                <p class="logo"><img src="images/yubdduk_logo.jpg" alt="엽떡 로고"></p>
+
+                <h1 id="appPopupTitle">동대문엽기떡볶이<br>APP 다운로드</h1>
+
+                <p class="txt">
+                    지금 엽기떡볶이 멤버십 앱을 다운로드 하시고,<br>
+                    다양한 멤버십 혜택의 기회를 잡으세요!
+                </p>
+
+                <p class="btn1"><a href="https://play.google.com/store/apps/details?id=com.yupdduk.morder"
+                        target="_blank"><img src="images/main_app_popup_logo1.jpg" alt="구글 플레이 다운로드 버튼"></a></p>
+
+                <p class="btn2"><a
+                        href="https://apps.apple.com/kr/app/%EC%97%BD%EA%B8%B0%EB%96%A1%EB%B3%B6%EC%9D%B4/id1190023113"
+                        target="_blank"><img src="images/main_app_popup_logo2.jpg" alt="앱스토어 다운로드 버튼"></a></p>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- sns -->
+        <section id="sns" aria-labelledby="snsHeading">
+            <h1 id="snsHeading">
+                SNS<br>
+                FOLLOW US
+            </h1>
+
+            <h4>맛있는 엽떡 이야기! 엽떡의 SNS를 통해서 만나보세요.</h4>
+
+            <p class="icon">
+                <img src="images/main_sns_icon.jpg" usemap="#sns" alt="SNS 아이콘">
+
+                <map name="sns">
+                    <area shape="circle" coords="25, 22, 45" href="https://blog.naver.com/ddm_yupdduk" target="_blank"
+                        alt="네이버 블로그">
+                    <area shape="circle" coords="79, 25, 45" href="https://www.instagram.com/yupdduk_official/"
+                        target="_blank" alt="인스타그램">
+                    <area shape="circle" coords="135, 25, 45" href="https://www.facebook.com/ddmyupdduk" target="_blank"
+                        alt="페이스북">
+                    <area shape="circle" coords="191, 25, 45"
+                        href="https://www.youtube.com/channel/UC6n3KHZx7bs5dK1fSVqWLvw" target="_blank" alt="유튜브">
+                    <area shape="circle" coords="247, 25, 45" href="https://x.com/Yupdduk_twt" target="_blank"
+                        alt="트위터">
+                    <area shape="circle" coords="303, 25, 45" href="https://pf.kakao.com/_xlxgBxjC" target="_blank"
+                        alt="카카오톡">
+                </map>
+            </p>
+
+            <p class="video">
+                <iframe width="515" height="280" src="https://www.youtube.com/embed/EYu-uxIjuSo"
+                    title="[엽기떡볶이_여비,더기] 맶있어~핵맵지만 핵맛있어 🔥" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </p>
+
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/yupdduk_official/" target="_blank"><img src="images/snsimg1.jpg"
+                            alt="SNS 이미지 1"></a>
+
+                    <div class="box">
+                        <a href="https://www.instagram.com/yupdduk_official/" target="_blank">
+                            인스타그램 방문하기</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/yupdduk_official/" target="_blank"><img src="images/snsimg2.jpg"
+                            alt="SNS 이미지 2"></a>
+
+                    <div class="box">
+                        <a href="https://www.instagram.com/yupdduk_official/" target="_blank">인스타그램 방문하기</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/yupdduk_official/" target="_blank"><img src="images/snsimg3.jpg"
+                            alt="SNS 이미지 3"></a>
+
+                    <div class="box">
+                        <a href="https://www.instagram.com/yupdduk_official/" target="_blank">인스타그램 방문하기</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/yupdduk_official/" target="_blank"><img src="images/snsimg4.jpg"
+                            alt="SNS 이미지 4"></a>
+
+                    <div class="box">
+                        <a href="https://www.instagram.com/yupdduk_official/" target="_blank">인스타그램 방문하기</a>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- 이벤트 -->
+
+        <section id="event" aria-labelledby="eventHeading">
+            <h1 id="eventHeading">EVENT</h1>
+            <p class="more"><a href="event.html">+ VIEW MORE</a></p>
+
+            <ul>
+                <li>
+                    <a href="event_goodbye.html">
+                        <figure>
+                            <img src="images/event_img1.jpg" alt="단종메뉴 안내 이벤트 이미지">
+                            <figcaption>
+                                07.31(토) ~<br><br>
+                                <span>엽기 닭날개, 치즈죽<br>메뉴 단종 안내</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/event_img2.jpg" alt="엽포터즈 6기 안내 이미지">
+                        <figcaption>
+                            07.31(토) ~ 08.05(월)<br><br>
+                            <span>엽포터즈 6기<br>합격자 발표</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/event_img4.jpg" alt="리뷰 이벤트 이미지">
+                        <figcaption>
+                            05.01(수) - 12.31(화)<br><br>
+                            <span>엽떡앱 사용후기<br>리뷰 이벤트</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/event_img3.jpg" alt="무료 다운로드 이벤트 이미지">
+                        <figcaption>
+                            06.03(월) - 12.31(화)<br><br>
+                            <span>엽기 캐릭터 배경화면<br>무료 다운로드</span>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- news -->
+        <section id="wrap-news" aria-labelledby="newsHeading">
+
+            <div id="news">
+
+                <ul>
+                    <li>
+                        <h1>NEWS</h1>
+                        <h4>
+                            동대문엽기떡볶이의 다양한 소식을
+                            빠르게 전달해드립니다.
+                        </h4>
+                    </li>
+
+                    <li>
+                        <a href="notice_73.html#gift_btn"><b>엽기떡볶이 홈페이지 리뉴얼 안내</b></a>
+                        <b>엽기떡볶이와 함께하는 tvN, TVING '슬기로운 의사생활'</b>
+                        <b>고객센터 운영시간 변경 안내</b>
+
+                        <p class="more"><a href="notice.html">+ VIEW MORE</a></p>
+
+                    </li>
+
+                    <li>
+                        <img src="images/news_posterjpg.jpg" alt="NEWS 슬의생 포스터 이미지">
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+    <!-- -------------------------------공통영역 시작------------------------------- -->
+
+    <!-- footer -->
+
+    <footer>
+        <div id="wrap-copy">
+            <ul>
+                <!-- 로고 -->
+                <li><a href="#"><img src="images/copy_logo.jpg" alt="HOT SEASONER 로고"></a></li>
+
+                <!-- 이용약관 및 회사 정보 -->
+                <li>
+                    <p class="txt1">
+                        <a href="#a">이용약관</a>
+                        <b></b>
+                        <span><a href="#a">개인정보처리방침</a></span>
+                        <b></b>
+                        <a href="#a">법적고지</a>
+                        <b></b>
+                        <a href="#a">영상정보처리기기운영/관리</a>
+                    </p>
+
+                    <p class="txt2">
+                        <span>(주)핫시즈너</span><b></b>사업자등록번호 : 201-86-13311<b></b>대표번호 : 070-7710-8592<b></b><span>고객센터
+                            1661-8514</span><br>
+                        본사 : 서울특별시 성동구 성수이로 18길 7 HS빌딩 7층
+                    </p>
+
+                    <p class="txt3">COPYRIGHT ⓒ BY HOTSEASONER HOT FOOD ALL RIGHTS RESERVED</p>
+                </li>
+
+                <!-- 수상 내역 -->
+                <li>
+                    <ol>
+                        <img src="images/copy_img1_2021.jpg" alt="2023 소비자포럼 - 올해의 브랜드 대상 떡볶이 부문 7년 수상">
+                        <p class="txt">
+                            <span>2023 소비자포럼</span><br>
+                            올해의 브랜드 대상 떡볶이<br>
+                            부문 7년 수상
+                        </p>
+                    </ol>
+
+                    <ol>
+                        <img src="images/copy_img1_2022.jpg" alt="2022 소비자포럼 - 올해의 브랜드 대상 떡볶이 부문 6년 수상">
+                        <p class="txt">
+                            <span>2022 소비자포럼</span><br>
+                            올해의 브랜드 대상 떡볶이<br>
+                            부문 6년 수상
+                        </p>
+                    </ol>
+
+                    <ol>
+                        <img src="images/copy_img1_2023.jpg" alt="2021 소비자포럼 - 올해의 브랜드 대상 떡볶이 부문 5년 수상">
+                        <p class="txt">
+                            <span>2021 소비자포럼</span><br>
+                            올해의 브랜드 대상 떡볶이<br>
+                            부문 5년 수상
+                        </p>
+                    </ol>
+
+                    <ol>
+                        <img src="images/copy_img2.jpg" alt="2018 해럴드 경제 - 고객감동국가경쟁력 우수 프랜차이즈 부문 대상 수상">
+                        <p class="txt">
+                            <span>2018 해럴드 경제</span><br>
+                            고객감동국가경쟁력 우수<br>
+                            프랜차이즈 부문 대상 수상
+                        </p>
+                    </ol>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+
+    <!-- top버튼 -->
+    <p class="arrow"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></p>
+
+
+
+</body>
+
+</html>

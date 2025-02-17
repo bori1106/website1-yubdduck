@@ -1,0 +1,246 @@
+/* -------------------------------공통영역 시작------------------------------- */
+
+/* footer */
+footer {
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+#wrap-copy {
+    width: 1200px;
+    height: 230px;
+    /* background: #000; */
+
+    margin: 0 auto;
+}
+
+#wrap-copy ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#wrap-copy ul li {
+    height: auto;
+    /* background: palegoldenrod; */
+    margin-top: 60px;
+
+}
+
+/* 로고 */
+#wrap-copy ul li:nth-child(1) {
+    width: 180px;
+}
+
+#wrap-copy ul li:nth-child(1) img {
+    width: 180px;
+}
+
+/* 글씨영역 */
+#wrap-copy ul li:nth-child(2) {
+    width: 520px;
+}
+
+
+#wrap-copy ul li:nth-child(2) p.txt1 a {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #888;
+}
+
+#wrap-copy ul li:nth-child(2) p.txt1 a:hover {
+    text-decoration: underline;
+}
+
+#wrap-copy ul li:nth-child(2) p.txt1 span a {
+    color: #e02635;
+}
+
+#wrap-copy ul li:nth-child(2) p.txt1 b {
+    padding-left: 40px;
+}
+
+#wrap-copy ul li:nth-child(2) p.txt2,
+#wrap-copy ul li:nth-child(2) p.txt3 {
+    padding-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #a7a7a7;
+    line-height: 1.7;
+}
+
+#wrap-copy ul li:nth-child(2) p.txt2 span {
+    color: #333;
+}
+
+#wrap-copy ul li:nth-child(2) p.txt2 b {
+    padding-left: 20px;
+}
+
+
+/* 오른쪽 영역 */
+
+#wrap-copy ul li:nth-child(3) {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+#wrap-copy ul li:nth-child(3) ol {
+    width: 190px;
+    height: 55px;
+    background: #f6f6f6;
+
+    /* float: left; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap-copy ul li:nth-child(3) ol img {
+    width: 45px;
+    height: 45px;
+    padding-right: 10px;
+}
+
+#wrap-copy ul li:nth-child(3) ol p.txt {
+    font-size: 10px;
+    color: #888;
+    font-weight: bold;
+}
+
+#wrap-copy ul li:nth-child(3) ol p.txt span {
+
+    font-size: 8px;
+}
+
+
+
+/* top버튼 */
+
+
+p.arrow {
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+}
+
+p.arrow a i {
+    font-size: 50px;
+    color: #333;
+}
+
+
+
+/* ---------- 태블릿버전  ----------*/
+@media all and (max-width:1024px) {
+
+    /* 카피라이트 */
+
+    #footer {
+        width: 100%;
+        height: 200px;
+        display: flex;
+
+    }
+
+    #wrap-copy {
+        width: 100%;
+        height: 200px;
+        position: relative;
+
+    }
+
+    #wrap-copy ul li:nth-child(1) {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+
+    #wrap-copy ul li:nth-child(2) {
+        width: 100%;
+        margin-top: 78px;
+
+        text-align: center;
+    }
+
+    #wrap-copy ul li:nth-child(2) p.txt2,
+    #wrap-copy ul li:nth-child(2) p.txt3 {
+        padding-top: 10px;
+        font-size: 11px;
+    }
+
+    #wrap-copy ul li:nth-child(2) p.txt1 a {
+        font-size: 12px;
+    }
+
+    #wrap-copy ul li:nth-child(3) {
+        width: 0;
+    }
+
+    #wrap-copy ul li:nth-child(3) ol {
+        display: none;
+    }
+
+    /* top버튼 */
+
+    p.arrow {
+        position: fixed;
+        bottom: 4%;
+        right: 4%;
+    }
+
+    p.arrow a i {
+        font-size: 35px;
+    }
+
+}
+
+
+
+/* ---------- 모바일 버전  ----------*/
+@media all and (max-width:768px) {
+    /* 카피라이트 */
+
+    #footer {
+        width: 100%;
+        height: 100px;
+        display: flex;
+
+    }
+
+    #wrap-copy {
+        width: 100%;
+        height: 100px;
+        position: relative;
+
+    }
+
+    #wrap-copy ul li:nth-child(1) {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+
+    #wrap-copy ul li:nth-child(2) {
+        display: none;
+    }
+
+
+
+    /* top버튼 */
+
+    p.arrow a i {
+        font-size: 25px;
+    }
+
+}

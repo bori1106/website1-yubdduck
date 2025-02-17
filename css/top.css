@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    /* cursor: url(../images/cursor.png)2 2, auto; */
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    box-sizing: border-box;
+}
+
+
+
+/* 배달의민족 주아체 */
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 상단 선 */
+
+#top_line {
+    width: 100%;
+    height: 5px;
+    background: #de1d24;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 99999;
+}
+
+
+/* 로고 및 로그인, 회원가입 */
+header {
+    width: 1200px;
+    height: 150px;
+    /* background: palegoldenrod; */
+    margin: 0 auto;
+
+    position: relative;
+}
+
+header h1.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header nav.user-menu {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+header nav.user-menu ul {
+    /* background: #de1d24; */
+    display: flex;
+}
+
+header nav.user-menu ul li {
+    margin: 0 10px;
+}
+
+header nav.user-menu a {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #555;
+}
+
+header nav.user-menu a:hover {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #333;
+}
+
+/* 메뉴nav */
+#wrap-nav {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 2px solid #e5e5e5;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 99998;
+}
+
+#nav-container {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+#nav-container span {
+    display: none;
+}
+
+#nav-container>ul {
+    width: 100%;
+    height: 100%;
+    /* background: palegoldenrod; */
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    position: relative;
+}
+
+#nav-container>ul>li {
+    position: relative;
+    height: 80px;
+}
+
+#nav-container>ul>li>a {
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #111;
+    line-height: 80px;
+}
+
+#nav-container>ul>li>p.icon {
+    position: absolute;
+    top: 5px;
+    right: 0;
+
+    display: none;
+}
+
+#nav-container>ul>li:hover>p.icon {
+    display: block;
+}
+
+#nav-container>ul>li>ul.sub {
+    position: absolute;
+    left: -39px;
+    top: 80px;
+    display: none;
+
+    background: #fff;
+    border: 2px solid #e5e5e5;
+    border-top: 0;
+
+    z-index: 99997;
+}
+
+
+#nav-container>ul>li:nth-child(3)>ul.sub {
+    left: -28px;
+}
+
+
+#nav-container>ul>li>ul.sub>li>a {
+    display: block;
+
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    /* border: 2px solid #e5e5e5; */
+    text-align: center;
+
+    background: #fff;
+
+    color: #111;
+    font-size: 15px;
+    letter-spacing: -1px;
+}
+
+
+#nav-container>ul>li>ul.sub>li:hover>a {
+    color: #de1d24;
+    font-weight: bold;
+}
+
+#nav-container>button {
+    display: none;
+}
+
+
+
+
+/* ---------- 태블릿버전  ----------*/
+@media all and (max-width:1024px) {
+
+    header {
+        width: 100%;
+    }
+
+    #wrap-nav {
+        width: 100%;
+        height: 60px;
+        display: flex;
+    }
+
+    #nav-container>ul.nav-menu {
+        width: 100%;
+        height: 60px;
+        display: flex;
+    }
+
+    #nav-container>ul.nav-menu>li {
+        height: 60px;
+
+    }
+
+    #nav-container>ul.nav-menu>li>a {
+        line-height: 60px;
+    }
+
+    #nav-container>ul.nav-menu>li>p.icon {
+        top: -2px;
+    }
+
+    #nav-container>ul.nav-menu>li>ul.sub {
+        position: absolute;
+        left: -39px;
+        top: 60px;
+        display: none;
+
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        border-top: 0;
+
+        z-index: 88888;
+    }
+
+
+}
+
+
+/* ---------- 모바일 버전  ----------*/
+@media all and (max-width:768px) {
+
+
+    header {
+        width: 100%;
+        position: relative;
+        /* background: palegreen; */
+    }
+
+    header h1.logo img {
+        width: 93.5px;
+        height: 99px;
+    }
+
+    header nav.user-menu {
+        position: absolute;
+        top: 90%;
+    }
+
+    header nav.user-menu a {
+        font-size: 12px;
+    }
+
+    header nav.user-menu a:hover {
+        font-size: 12px;
+    }
+
+    #wrap-nav {
+        height: auto;
+    }
+
+    #nav-container {
+        height: 40px;
+        /* background: palegoldenrod; */
+    }
+
+    #nav-container>button {
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        display: block;
+        background: #fff;
+        color: #111;
+        border: 0;
+        width: 35px;
+    }
+
+    #nav-container>ul.nav-menu {
+        width: 100%;
+        /* display: none; */
+        flex-direction: column;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    #nav-container>ul.nav-menu>li {
+        background: #fff;
+        text-align: center;
+        height: 50px;
+        border-bottom: 1px solid #e5e5e5;
+        position: relative;
+    }
+
+    #nav-container>ul.nav-menu>li a {
+        display: block;
+        font-size: 15px;
+        line-height: 50px;
+    }
+
+    #nav-container>ul.nav-menu>li:hover a {
+        transform: scale(1.04);
+    }
+
+    #nav-container>ul.nav-menu>li:hover>p.icon {
+        display: none;
+    }
+
+    #nav-container>ul.nav-menu>li>ul.sub {
+        display: none;
+    }
+
+    #nav-container>ul.nav-menu>li>ul.sub>li>a {
+        display: none;
+    }
+
+
+}

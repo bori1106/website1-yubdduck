@@ -1,0 +1,321 @@
+#dong-top {
+    width: 100%;
+    height: 528px;
+
+    margin: 0 auto;
+    background: url(../images/hot_top_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#dong-top div.box {
+    width: 100%;
+    height: 528px;
+    /* background: rgba(0, 0, 0, 0.6); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#dong-top div.box h2 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+#dong-top div.box h2 span {
+    font-family: 'Palatino Linotype';
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0px;
+
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 버튼 영역  */
+#dong-btn {
+    width: 1100px;
+    height: 160px;
+    /* background: palegoldenrod; */
+    margin: 0 auto;
+}
+
+#dong-btn ol {
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #999;
+    padding: 40px 0;
+    display: flex;
+}
+
+#dong-btn ol li {
+    font-weight: bold;
+}
+
+#dong-btn ol li:nth-child(3) {
+    color: #222;
+}
+
+#dong-btn ol img {
+    width: 13px;
+    margin-bottom: 4px;
+    margin: 0 5px 4px 5px;
+}
+
+
+/* 버튼 */
+#dong-btn ul {
+    display: flex;
+}
+
+#dong-btn ul li a {
+    display: block;
+
+    width: 550px;
+    height: 75px;
+    background: #fff;
+    /* border: 1px solid #e2e2e2; */
+    border-bottom: 3px solid #e2e2e2;
+    box-sizing: border-box;
+
+    font-size: 22px;
+    font-weight: bold;
+    color: #888;
+    letter-spacing: -2px;
+
+    text-align: center;
+    line-height: 75px;
+
+}
+
+#dong-btn ul li:last-child a {
+    /* background: #de1d24; */
+    border-bottom: 3px solid #de1d24;
+}
+
+#dong-btn ul li:last-child a {
+    color: #222;
+}
+
+
+
+#dong-btn ul li:hover a {
+    /* background: #de1d24; */
+    border-bottom: 3px solid #de1d24;
+}
+
+#dong-btn ul li:hover a {
+    color: #222;
+}
+
+/* 메인 영역  */
+#dong-main {
+    width: 1200px;
+    height: auto;
+    /* background: paleturquoise; */
+    margin: 0 auto;
+}
+
+
+#dong-main div.top {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    background: #fff;
+
+}
+
+#dong-main h4 {
+    text-align: center;
+
+    font-size: 25px;
+    font-weight: bold;
+    color: #f01e12;
+    letter-spacing: -2px;
+    line-height: 1.5;
+
+    padding-top: 110px;
+}
+
+#dong-main h6 {
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    letter-spacing: -1px;
+    line-height: 1.5;
+
+    padding: 20px 0 110px 0;
+}
+
+/* 동영상 */
+
+#dong-main p.gif {
+    width: 1200px;
+    height: 800px;
+}
+
+#dong-main p.gif img {
+    width: 100%;
+}
+
+
+
+/* 메인내용 */
+
+#dong-main ul {
+    width: 1200px;
+    height: 1890PX;
+    /* background: paleturquoise; */
+    margin: 0 auto;
+    margin-bottom: 90px;
+
+    display: flex;
+    align-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+#dong-main ul p.line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#dong-main ul li {
+    width: 520px;
+    height: 285px;
+    /* background: #ccc; */
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+
+
+#dong-main ul li img {
+    width: 520px;
+}
+
+#dong-main ul li h2 {
+    font-size: 35px;
+    color: #222;
+    letter-spacing: -1px;
+    padding-bottom: 65px;
+    padding-left: 5px;
+}
+
+#dong-main ul li p.txt {
+    font-size: 21px;
+    color: #222;
+    letter-spacing: -1px;
+    line-height: 2.2;
+    padding-left: 30px;
+}
+
+#dong-main ul li p.txt span {
+    font-weight: bold;
+    color: #d12a32;
+}
+
+#dong-main ul li:nth-child(1),
+#dong-main ul li:nth-child(5),
+#dong-main ul li:nth-child(9) {
+    text-align: right;
+}
+
+#dong-main ul li:nth-child(1) p.txt,
+#dong-main ul li:nth-child(5) p.txt,
+#dong-main ul li:nth-child(9) p.txt {
+    padding-right: 30px;
+}
+
+#dong-main ul li:nth-child(1) h2,
+#dong-main ul li:nth-child(5) h2,
+#dong-main ul li:nth-child(9) h2 {
+    padding-right: 5px;
+}
+
+
+#dong-main ul li:nth-child(1),
+#dong-main ul li:nth-child(5),
+#dong-main ul li:nth-child(8) {
+    padding-top: 50px;
+}
+
+#dong-main ul li:nth-child(9) {
+    padding-top: 25px;
+}
+
+/* 분홍색 형광펜 표시 */
+#dong-main ul li:nth-child(1) {
+    background: #fff url(../images/dong_main_bg1.jpg) no-repeat 83px 75px;
+}
+
+#dong-main ul li:nth-child(4) {
+    background: #fff url(../images/dong_main_bg1.jpg) no-repeat -68px 25px;
+}
+
+#dong-main ul li:nth-child(5) {
+    background: #fff url(../images/dong_main_bg1.jpg) no-repeat 250px 75px;
+}
+
+#dong-main ul li:nth-child(8) {
+    background: #fff url(../images/dong_main_bg1.jpg) no-repeat -229px 75px;
+}
+
+#dong-main ul li:nth-child(9) {
+    background: #fff url(../images/dong_main_bg1.jpg) no-repeat 125px 52px;
+}
+
+
+/* 마지막영역 */
+#dong-down {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    /* background: palegoldenrod; */
+
+}
+
+
+#dong-down MARQUEE {
+    text-align: center;
+    font-size: 18px;
+    color: 222;
+    letter-spacing: -1px;
+}
+
+#dong-down MARQUEE img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}

@@ -1,0 +1,239 @@
+#notice-top {
+    width: 100%;
+    height: 528px;
+    margin: 0 auto;
+    background: url(../images/notice_top_bg.jpg) no-repeat center;
+
+    background-size: cover;
+}
+
+#notice-top div.box {
+    width: 100%;
+    height: 528px;
+    /* background: rgba(0, 0, 0, 0.6); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#notice-top div.box h2 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+#notice-top div.box h2 span {
+    font-family: 'Palatino Linotype';
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0px;
+   animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* 버튼 영역  */
+#notice-btn {
+    width: 1100px;
+    height: 110px;
+    margin: 0 auto;
+}
+
+#notice-btn ol {
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #999;
+    padding: 40px 0;
+    display: flex;
+}
+
+#notice-btn ol li {
+    font-weight: bold;
+}
+
+#notice-btn ol li:nth-child(3) {
+    color: #222;
+}
+
+#notice-btn ol img {
+    width: 13px;
+    margin-bottom: 4px;
+}
+
+
+
+/* 메인 영역  */
+#main {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* <제목> */
+#main-top {
+    width: 1100px;
+    height: auto;
+    /* background: paleturquoise; */
+    margin: 0 auto;
+    margin-top: 50px;
+
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #d3d3d3;
+
+    padding: 40px 0 0 40px;
+    box-sizing: border-box;
+}
+
+#main-top h2 {
+    font-size:30px;
+    color: #222;
+    letter-spacing: -1px;
+    
+}
+
+
+#main-top h4 {
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    
+}
+
+#main-top h4 span {
+    padding-left: 40px;
+}
+
+
+
+/* <메인 내용> */
+#main-txt {
+    width: 1100px;
+    height: auto;
+    /* background: paleturquoise; */
+    margin: 0 auto;
+
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#main-txt h4 {
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+    letter-spacing: -1px;
+
+    line-height: 3;
+}
+
+
+
+
+/* <하단> */
+#main-bottom {
+    width: 1100px;
+    height: auto;
+    /* background: paleturquoise; */
+    margin: 0 auto;
+}
+
+
+#main-bottom ul {
+    display: flex;
+    width: 1100px;
+    height:85px;
+    border-bottom: 1px solid #d3d3d3;
+
+    cursor: pointer;
+}
+
+#main-bottom ul:hover {
+    background: #f6f6f6;
+}
+
+#main-bottom ul li {
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 85px;
+    font-weight: normal;
+    color: #888;
+
+    text-align: center;
+}
+
+#main-bottom ul:first-of-type {
+    border-top: 1px solid #333;
+}
+
+#main-bottom ul:last-of-type {
+    border-bottom: 1px solid #333;
+}
+
+
+#main-bottom ul li:nth-child(1) {
+    width: 140px;
+    /* background: palegoldenrod; */
+}
+
+#main-bottom ul li:nth-child(2) {
+    width: 830px;
+    /* background: palegreen; */
+    text-align: left;
+    font-weight: normal;
+    color: #333;
+}
+
+#main-bottom ul li:nth-child(3) {
+    width: 180px;
+    /* background: palegoldenrod; */
+}
+
+#main-bottom ul.main li.date {
+    width: 180px;
+    /* background: palegoldenrod; */
+    font-weight: normal;
+    color: #888;
+}
+
+
+#main-bottom p.btn {
+    width: 470px;
+    height: 80px;
+    background: #232323;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-bottom: 100px;
+    
+}
+
+
+#main-bottom p.btn a {
+
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #fff;
+    line-height: 80px;
+    display: block;
+    text-align: center;
+}
